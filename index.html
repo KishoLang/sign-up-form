@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/pet-shop-favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Petshop Sign-Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img id="shop-item-img" src="images/petshop_items.png" alt="image of pet food">
+            <img id="shop-woof-img" src="images/petshop-woof.png" alt="image of a speech bubble saying 'woof'">
+        </div>
+        <div class="form-container">
+            <div class="header-container">
+                <h1>We're open! <span>(this is a demo site)</span></h1>
+                <h1>Sign up for exclusive deals</h1>
+            </div>
+            <form action="" method="get">
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for="first_name">First Name</label>
+                        <input class="input-field" type="text" id="first_name" name="first_name" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div> 
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
