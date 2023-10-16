@@ -6,9 +6,20 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/pet-shop-favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Petshop Sign-Up</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("loading");
+            window.addEventListener("load", showPage);
+        })
+
+        function showPage() {
+            document.body.classList.remove("loading");
+            console.log("Done loading")
+        }
+    </script>
 </head>
 <body>
     <div class="container">
