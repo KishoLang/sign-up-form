@@ -6,10 +6,27 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    min-height: 100vh;
+}
+
+#footer {
+    margin-bottom: 0;
+    margin-top: 5vh;
+}
+
+
+#footer-text {
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3309698879551821) 80%, rgba(255,255,255,0.8099614845938375) 100%);
+    color: black;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 12px;
 }
 
 .container {
     display: flex;
+    min-height: 100%;
+    margin: 0;
 }
 
 .image-container {
@@ -74,10 +91,10 @@ body {
     flex-direction: column;
     background-color: #ffde59;
     width: 55vw;   
-    height: 100vh;
     padding-left: 10vw;
     padding-right: 10vw;
     padding-top: 12vh;
+    margin-bottom: 0;
 }
 
 .header-container {
