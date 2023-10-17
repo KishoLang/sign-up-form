@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="images/pet-shop-favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <title>Petshop Sign-Up</title>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -29,10 +29,10 @@
         </div>
         <div class="form-container">
             <div class="header-container">
-                <h1>We're open! <span>(this is a demo site)</span></h1>
+                <h1>We're open! <span>(this is a demo, please add fake data)</span></h1>
                 <h1>Sign up for exclusive deals</h1>
             </div>
-            <form action="" method="get">
+            <form id="sign-up-form" action="https://httpbin.org/post" method="post">
                 <div class="form-row">
                     <div class="form-item">
                         <label for="first_name">First Name</label>
@@ -60,12 +60,14 @@
                     </div>
                     <div class="form-item">
                         <label for="confirm_password">Confirm Password</label>
-                        <input type="password" id="confirm_password" name="confirm_password" required>
+                        <input type="password" id="confirm_password" name="confirm_password" oninput="setCustomValidity('')" required>
                     </div>
                 </div>
-                <button type="submit">Create Account</button>
+                <button id="form_btn" type="submit">Create Account</button>
+                <p>Already have an account? <span>LOG IN</span></p>
             </form>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

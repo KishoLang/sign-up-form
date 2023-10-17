@@ -1,5 +1,5 @@
 :root {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 #shop-item-img {
     width: 400px;
     height: 270px;
-    animation: left-to-right 1.5s ease-in forwards;
+    animation: left-to-right 1.5s ease-out forwards;
 }
 
 #shop-woof-img {
@@ -34,7 +34,7 @@ body {
     height: auto;
     top: 10px;
     right: 10px;
-    animation: wobble 2s ease-in forwards;
+    animation: wobble 2s ease-in-out forwards;
 }
 
 @keyframes left-to-right {
@@ -76,6 +76,7 @@ body {
     width: 55vw;   
     height: 100vh;
     padding-left: 10vw;
+    padding-right: 10vw;
     padding-top: 12vh;
 }
 
@@ -87,6 +88,12 @@ body {
 
 .header-container span {
     font-size: 12px;
+}
+
+form {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 .form-row {
@@ -107,6 +114,16 @@ body {
     border: 2px solid white;
 }
 
+input {
+    position: relative;
+}
+
+input::after {
+    content: "Wrong input";
+    position: absolute;
+    bottom: -8px;
+}
+
 input:focus {
     outline: none;
     border: 2px solid rgba(0, 0, 0, 0.221);
@@ -117,11 +134,49 @@ button {
     height: 40px;
     margin-left: 20px;
     margin-top: 10px;
+    padding-bottom: 0px;
     font-size: 15px;
     border-radius: 5px;
-    background-color: white;
-    border: 2px solid white;
+    background-color: rgba(34, 192, 195, 0.765);
+    color: white;
     font-family: 'Open Sans', sans-serif;
+}
+
+button:active {
+    outline: none;
+    color: white;
+    background: linear-gradient(220deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 40%);
+    background-size: 200% 100%;
+    animation: makeItfadeIn 500ms ease-in-out;
+    box-shadow: inset 0 0 5px gray;
+}
+
+@keyframes makeItfadeIn {
+    from {
+        background-position: right;
+    }
+
+    to {
+        background-position: left;
+    }
+}
+
+p {
+    font-size: 10px;
+    margin-left: 22px;
+}
+
+p  span {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.c-validation {
+    color: black;
+    font-size: 30px;
 }
 
 
